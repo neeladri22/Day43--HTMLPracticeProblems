@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CodePen - Demo Flexbox 3</title>
+    <style>
+     body {padding: 2em;}
+    .headerContainer{
+        display: flex;
+        flex-flow: column wrap;
+        align-content: center;
+        background: tomato;
+        font-weight: bold;
+        padding: 10px;
+    }
+    .footerContainer{
+        display: flex;
+        flex-flow: column wrap;
+        align-content: center;
+        background: lightgreen;
+        font-weight: bold;
+        padding: 10px;
+    }
+    .mainContainer{
+        display: flex;
+        flex-flow:row wrap;
+        font-weight: bold;
+        text-align: center;
+    }
+    .mainContentItem{
+        text-align: left;
+        background: deepskyblue;
+    }
+    article{
+        padding:10px ;
+        margin: 10px;
+        background: aqua;
+    }
+    .sideBarLeftItem{background: gold;}
+    .sideBarRightItem{background: hotpink;}
+
+    .sideBarItem{flex:1 0 0 ; border:0px solid green}
+    .mainContentItem{flex: 3 0px;}
+    .sideBarLeftItem{order: 1;}
+    .mainContentItem{order:2;}
+    .sideBarRightItem{order: 3;}
+    </style>
+</head>
+<body>
+   <header class ="headerContainer"><h1>Header-Sample FlexBox Example</h1></header>
+   <div class ="mainContainer">
+    <section class="mainContentItem">
+        <article>
+            <h2>First Article</h2>
+            <p>There are many pollutants that are major factors in disease in humans. Among them, Particulate Matter (PM), particles of variable but very small diameter, penetrate the respiratory system via inhalation, causing respiratory and cardiovascular diseases, reproductive and central nervous system dysfunctions, and cancer.</p>
+        </article>
+        <article>
+            <h2>Second Article</h2>
+            <p>Ozone in the stratosphere plays a protective role against ultraviolet irradiation, it is harmful when in high concentration at ground level, also affecting the respiratory and cardiovascular system. </p>
+        </article>
+        <article>
+            <h2>Third Article</h2>
+            <p>The only way to tackle this problem is through public awareness coupled with a multidisciplinary approach by scientific experts; national and international organizations must address the emergence of this threat and propose sustainable solutions.</p>
+                
+            
+        </article>
+    </section>
+    <sideBar class="sideBarItem sideBarLeftItem"><div class="center"><p>Left Side Bar</p></div></sideBar>
+    <sideBar class="sideBarItem sideBarRightItem"><div class="center"><p>Right Side Bar</p></div></sideBar>
+</div>
+<footer class="footerContainer">Footer</footer>
+</body>
+</html>
