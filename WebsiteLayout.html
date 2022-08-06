@@ -1,0 +1,59 @@
+<!doctype html>
+<title>Example</title>
+<style>
+  * {
+    box-sizing: border-box; 
+  }
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: row;
+    margin: 0;
+  }
+  .col-1 {
+    background: #D7E8D4;
+    flex: 1;
+  }
+  .col-2 {
+    display: flex;
+    flex-direction: column;
+    flex: 5;
+  }
+  .content {
+    display: flex;
+    flex-direction: row;
+  }
+  .content > article {
+    flex: 4;
+    min-height: 60vh;
+  }
+  header, footer {
+    background: yellowgreen;
+    height: 20vh;
+  }
+  header, footer, article, nav {
+    padding: 1em;
+  }
+</style>
+<body>
+  <nav class="col-1">Nav</nav>
+  <div class="col-2">
+  	<header>Header</header>
+    <main class="content">
+    <article>
+        <h2>First Article</h2>
+            <p>There are many pollutants that are major factors in disease in humans. Among them, Particulate Matter (PM), particles of variable but very small diameter, penetrate the respiratory system via inhalation, causing respiratory and cardiovascular diseases, reproductive and central nervous system dysfunctions, and cancer.</p>
+        </article>
+        <article>
+            <h2>Second Article</h2>
+            <p>Ozone in the stratosphere plays a protective role against ultraviolet irradiation, it is harmful when in high concentration at ground level, also affecting the respiratory and cardiovascular system. </p>
+        </article>
+        <article>
+            <h2>Third Article</h2>
+            <p>The only way to tackle this problem is through public awareness coupled with a multidisciplinary approach by scientific experts; national and international organizations must address the emergence of this threat and propose sustainable solutions.</p>
+                
+    </article>
+    </main>
+  	<footer>Footer</footer>
+  </div>
+</body>
